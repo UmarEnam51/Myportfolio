@@ -446,6 +446,11 @@
         }
 
         @media (max-width: 480px) {
+            html {
+                padding-top: 28px;
+                scroll-padding-top: 175px;
+            }
+
             :root {
                 --spacing-lg: 1.5rem;
                 --spacing-xl: 2.5rem;
