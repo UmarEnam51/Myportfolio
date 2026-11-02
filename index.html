@@ -1,0 +1,909 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Umar - Portfolio | Junior Web Developer & Graphic Designer</title>
+  <meta name="description" content="Portfolio pribadi Umar - Junior Web Developer & Graphic Designer berbasis di Yogyakarta. Dibangun dengan Bootstrap 5 responsif.">
+  <meta name="author" content="Umar (UmarEnam51)">
+  <link rel="icon" type="image/png" href="assets/images/avatar.png">
+
+  <!-- Offline Local Bootstrap 5 CSS -->
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  
+  <!-- Offline Local Bootstrap Icons CSS -->
+  <link rel="stylesheet" href="assets/css/bootstrap-icons.min.css">
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <!-- Google Fonts: Poppins -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Main Container -->
+  <div class="container container-xl py-4 py-lg-5">
+    <div class="row g-4">
+
+      <!-- ==========================================
+           LEFT SIDEBAR: Profile vCard (.card)
+           ========================================== -->
+      <aside class="col-lg-4 col-xl-3">
+        <div class="card sidebar-card p-4 text-center">
+          
+          <!-- Avatar & Status -->
+          <div class="profile-avatar-wrapper">
+            <img src="assets/images/profile.jpg" alt="Foto Profil Umar" class="profile-avatar img-fluid">
+            <span class="status-badge" title="Tersedia untuk proyek"></span>
+          </div>
+
+          <!-- Name & Role -->
+          <h1 class="h4 fw-bold mb-1">Umar</h1>
+          <p class="role-badge mb-3">Web Developer & Graphic Designer</p>
+
+          <!-- Mobile Toggle Button for Contacts -->
+          <div class="d-lg-none mb-3">
+            <button class="btn btn-outline-primary btn-sm w-100 rounded-pill py-2" type="button" data-bs-toggle="collapse" data-bs-target="#contactsCollapse" aria-expanded="false" aria-controls="contactsCollapse" id="toggleContactsBtn">
+              <span id="toggleContactsText">Lihat Kontak Lengkap</span>
+              <i class="bi bi-chevron-down ms-1" id="toggleContactsIcon"></i>
+            </button>
+          </div>
+
+          <!-- Contact Information List (Collapsible on Mobile, always open on Desktop) -->
+          <div class="collapse d-lg-block text-start" id="contactsCollapse">
+            <hr class="border-secondary opacity-25 my-3">
+
+            <div class="contact-list">
+              <!-- Email -->
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i class="bi bi-envelope-at-fill"></i>
+                </div>
+                <div>
+                  <div class="contact-label">Email</div>
+                  <a href="mailto:siktyone@gmail.com" class="contact-val">siktyone@gmail.com</a>
+                </div>
+              </div>
+
+              <!-- GitHub -->
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i class="bi bi-github"></i>
+                </div>
+                <div>
+                  <div class="contact-label">GitHub</div>
+                  <a href="https://github.com/UmarEnam51" target="_blank" rel="noopener noreferrer" class="contact-val">UmarEnam51</a>
+                </div>
+              </div>
+
+              <!-- Phone / WhatsApp -->
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i class="bi bi-whatsapp"></i>
+                </div>
+                <div>
+                  <div class="contact-label">WhatsApp / Telepon</div>
+                  <a href="https://wa.me/6281200000000" target="_blank" rel="noopener noreferrer" class="contact-val">+62 812-xxxx-xxxx</a>
+                </div>
+              </div>
+
+              <!-- Location -->
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i class="bi bi-geo-alt-fill"></i>
+                </div>
+                <div>
+                  <div class="contact-label">Lokasi</div>
+                  <span class="contact-val">Yogyakarta, Indonesia</span>
+                </div>
+              </div>
+            </div>
+
+            <hr class="border-secondary opacity-25 my-3">
+
+            <!-- Social Media Buttons (.btn) -->
+            <div class="d-flex justify-content-center gap-2 mb-3">
+              <a href="https://github.com/UmarEnam51" target="_blank" rel="noopener noreferrer" class="social-btn" title="GitHub">
+                <i class="bi bi-github"></i>
+              </a>
+              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-btn" title="LinkedIn">
+                <i class="bi bi-linkedin"></i>
+              </a>
+              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-btn" title="Instagram">
+                <i class="bi bi-instagram"></i>
+              </a>
+              <a href="https://wa.me/6281200000000" target="_blank" rel="noopener noreferrer" class="social-btn" title="WhatsApp">
+                <i class="bi bi-whatsapp"></i>
+              </a>
+            </div>
+
+            <!-- Download CV Button (.btn) -->
+            <a href="#contact" class="btn btn-primary w-100 rounded-pill py-2 shadow-sm" onclick="document.querySelector('[data-target=\'contact\']').click();">
+              <i class="bi bi-send-fill me-2"></i>Hubungi Saya
+            </a>
+          </div>
+
+        </div>
+      </aside>
+
+      <!-- ==========================================
+           RIGHT MAIN CONTENT: Navbar & Sections
+           ========================================== -->
+      <main class="col-lg-8 col-xl-9">
+
+        <!-- Top Navigation Bar (.navbar) -->
+        <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
+          <div class="container-fluid p-0">
+            <a class="navbar-brand fw-bold" href="#">
+              <i class="bi bi-code-slash text-info me-2"></i>Umar<span class="text-primary">.dev</span>
+            </a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarContent">
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-1">
+                <li class="nav-item">
+                  <a class="nav-link active" data-target="about" href="#about">
+                    <i class="bi bi-person me-1"></i>About
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-target="resume" href="#resume">
+                    <i class="bi bi-file-earmark-text me-1"></i>Resume
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-target="portfolio" href="#portfolio">
+                    <i class="bi bi-grid me-1"></i>Portfolio
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-target="skills" href="#skills">
+                    <i class="bi bi-stars me-1"></i>Skills
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-target="contact" href="#contact">
+                    <i class="bi bi-envelope me-1"></i>Contact
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+        <!-- Main Card Container (.card) -->
+        <div class="card main-content-card p-4 p-md-5">
+
+          <!-- ========================================================
+               TAB 1: ABOUT ME (#about)
+               ======================================================== -->
+          <section id="about" class="tab-pane active">
+            <h2 class="section-title">Tentang Saya</h2>
+            
+            <p class="lead text-light mb-4" style="font-size: 1.05rem;">
+              Halo! Saya <strong>Umar</strong>, seorang <em>Junior Web Developer</em> dan <em>Graphic Designer</em> yang bersemangat dalam merancang pengalaman web modern, fungsional, dan memiliki daya tarik visual tinggi.
+            </p>
+            <p class="text-secondary mb-5">
+              Dengan pemahaman mendalam tentang ekosistem frontend seperti <strong>Bootstrap 5</strong>, HTML5, CSS3, dan JavaScript, saya mampu mengubah konsep dan desain antarmuka menjadi halaman web yang cepat, responsif di berbagai perangkat, serta mudah digunakan. Selain itu, keahlian desain grafis saya membantu menghadirkan visualisasi brand dan konten promosi yang selaras dan profesional.
+            </p>
+
+            <!-- What I'm Doing / Services (.row + .card) -->
+            <h3 class="h4 fw-bold mb-4">Layanan & Keahlian Utama</h3>
+            <div class="row g-4 mb-5">
+              
+              <!-- Service 1: Web Development -->
+              <div class="col-md-6">
+                <div class="card service-card">
+                  <div class="service-icon-box">
+                    <i class="bi bi-laptop"></i>
+                  </div>
+                  <h4 class="h5 fw-bold mb-2">Web Development</h4>
+                  <p class="text-secondary mb-0">
+                    Membangun website modern, responsif, dan terstruktur rapi dengan <strong>Bootstrap 5</strong>, HTML5, CSS3, dan logika JavaScript interaktif.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Service 2: Graphic Design -->
+              <div class="col-md-6">
+                <div class="card service-card">
+                  <div class="service-icon-box">
+                    <i class="bi bi-palette"></i>
+                  </div>
+                  <h4 class="h5 fw-bold mb-2">Graphic Design</h4>
+                  <p class="text-secondary mb-0">
+                    Mendesain visual identity, banner promosi, poster acara, serta aset grafis beresolusi tinggi dengan tipografi dan komposisi harmonis.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Service 3: UI/UX Design -->
+              <div class="col-md-6">
+                <div class="card service-card">
+                  <div class="service-icon-box">
+                    <i class="bi bi-phone"></i>
+                  </div>
+                  <h4 class="h5 fw-bold mb-2">UI/UX & Mobile-First</h4>
+                  <p class="text-secondary mb-0">
+                    Merancang tata letak antarmuka pengguna yang bersih, intuitif, dan adaptif untuk kenyamanan pengguna di smartphone, tablet, maupun desktop.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Service 4: Social Media Branding -->
+              <div class="col-md-6">
+                <div class="card service-card">
+                  <div class="service-icon-box">
+                    <i class="bi bi-instagram"></i>
+                  </div>
+                  <h4 class="h5 fw-bold mb-2">Social Media Content</h4>
+                  <p class="text-secondary mb-0">
+                    Spesialis dalam merancang template Instagram Story & Feed profesional untuk meningkatkan impresi dan engagement brand digital.
+                  </p>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Highlights / Key Values (.row + .card) -->
+            <h3 class="h4 fw-bold mb-4">Nilai & Karakteristik Kerja</h3>
+            <div class="row g-3">
+              <div class="col-sm-4 text-center">
+                <div class="card p-3 card-inner">
+                  <i class="bi bi-speedometer2 text-info fs-2 mb-2"></i>
+                  <h5 class="h6 fw-bold mb-1">Cepat & Responsif</h5>
+                  <small class="text-secondary">Optimal di setiap ukuran layar</small>
+                </div>
+              </div>
+              <div class="col-sm-4 text-center">
+                <div class="card p-3 card-inner">
+                  <i class="bi bi-check2-circle text-success fs-2 mb-2"></i>
+                  <h5 class="h6 fw-bold mb-1">Kode Terstruktur</h5>
+                  <small class="text-secondary">Standar Bootstrap & W3C valid</small>
+                </div>
+              </div>
+              <div class="col-sm-4 text-center">
+                <div class="card p-3 card-inner">
+                  <i class="bi bi-brush text-warning fs-2 mb-2"></i>
+                  <h5 class="h6 fw-bold mb-1">Visual Estetis</h5>
+                  <small class="text-secondary">Desain menarik dan berkarakter</small>
+                </div>
+              </div>
+            </div>
+
+          </section>
+
+          <!-- ========================================================
+               TAB 2: RESUME (#resume)
+               ======================================================== -->
+          <section id="resume" class="tab-pane">
+            <h2 class="section-title">Resume & Pengalaman</h2>
+
+            <div class="row g-4 mb-5">
+              
+              <!-- Column 1: Pendidikan -->
+              <div class="col-md-6">
+                <div class="d-flex align-items-center gap-2 mb-4">
+                  <div class="contact-icon" style="width: 38px; height: 38px;">
+                    <i class="bi bi-mortarboard-fill"></i>
+                  </div>
+                  <h3 class="h5 fw-bold mb-0">Pendidikan</h3>
+                </div>
+
+                <div class="timeline">
+                  
+                  <div class="timeline-item">
+                    <span class="timeline-dot"></span>
+                    <span class="timeline-date">2023 — Sekarang</span>
+                    <h4 class="h6 fw-bold text-light mb-1">Sarjana Teknik Informatika</h4>
+                    <p class="text-info small mb-2">Universitas / Institut Teknologi</p>
+                    <p class="text-secondary small mb-0">
+                      Fokus pada Pemrograman Web, Rekayasa Perangkat Lunak, Struktur Data, dan Pemrograman Frontend (PFS) berbasis Bootstrap & JavaScript.
+                    </p>
+                  </div>
+
+                  <div class="timeline-item">
+                    <span class="timeline-dot"></span>
+                    <span class="timeline-date">2020 — 2023</span>
+                    <h4 class="h6 fw-bold text-light mb-1">Sekolah Menengah Kejuruan / Atas</h4>
+                    <p class="text-info small mb-2">Rekayasa Perangkat Lunak & Multimedia</p>
+                    <p class="text-secondary small mb-0">
+                      Mempelajari dasar-dasar algoritma, desain grafis, tipografi digital, serta pembuatan halaman web statis pertama.
+                    </p>
+                  </div>
+
+                </div>
+              </div>
+
+              <!-- Column 2: Pengalaman -->
+              <div class="col-md-6">
+                <div class="d-flex align-items-center gap-2 mb-4">
+                  <div class="contact-icon" style="width: 38px; height: 38px;">
+                    <i class="bi bi-briefcase-fill"></i>
+                  </div>
+                  <h3 class="h5 fw-bold mb-0">Pengalaman</h3>
+                </div>
+
+                <div class="timeline">
+                  
+                  <div class="timeline-item">
+                    <span class="timeline-dot"></span>
+                    <span class="timeline-date">2024 — Sekarang</span>
+                    <h4 class="h6 fw-bold text-light mb-1">Frontend Developer & Designer</h4>
+                    <p class="text-info small mb-2">Freelance / Proyek Mandiri</p>
+                    <p class="text-secondary small mb-0">
+                      Mengembangkan antarmuka landing page responsif, slicing desain ke Bootstrap 5, serta merancang identitas visual untuk klien UMKM.
+                    </p>
+                  </div>
+
+                  <div class="timeline-item">
+                    <span class="timeline-dot"></span>
+                    <span class="timeline-date">2023 — 2024</span>
+                    <h4 class="h6 fw-bold text-light mb-1">Social Media Content Creator</h4>
+                    <p class="text-info small mb-2">Digital Promotion & Branding</p>
+                    <p class="text-secondary small mb-0">
+                      Memproduksi puluhan template Instagram Story dan feed interaktif untuk kebutuhan pemasaran digital dan kampanye event online.
+                    </p>
+                  </div>
+
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Certifications & Achievements -->
+            <h3 class="h5 fw-bold mb-3">Sertifikasi & Pelatihan</h3>
+            <div class="row g-3">
+              <div class="col-sm-6">
+                <div class="card p-3 card-inner d-flex flex-row align-items-center gap-3">
+                  <i class="bi bi-award-fill text-warning fs-3"></i>
+                  <div>
+                    <h5 class="h6 fw-bold text-light mb-0">Bootstrap 5 Web Development</h5>
+                    <small class="text-secondary">Praktikum Frontend Web (PFS)</small>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="card p-3 card-inner d-flex flex-row align-items-center gap-3">
+                  <i class="bi bi-award-fill text-info fs-3"></i>
+                  <div>
+                    <h5 class="h6 fw-bold text-light mb-0">Graphic Design & Digital Branding</h5>
+                    <small class="text-secondary">Visual Design Academy</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </section>
+
+          <!-- ========================================================
+               TAB 3: PORTFOLIO (#portfolio)
+               ======================================================== -->
+          <section id="portfolio" class="tab-pane">
+            <h2 class="section-title">Portfolio Proyek</h2>
+
+            <!-- Filter Buttons (.btn) -->
+            <div class="d-flex flex-wrap gap-2 mb-4">
+              <button class="btn btn-outline-primary btn-sm portfolio-filter-btn active rounded-pill px-3" data-filter="all">
+                Semua Proyek
+              </button>
+              <button class="btn btn-outline-primary btn-sm portfolio-filter-btn rounded-pill px-3" data-filter="web">
+                Web Development
+              </button>
+              <button class="btn btn-outline-primary btn-sm portfolio-filter-btn rounded-pill px-3" data-filter="graphic">
+                Graphic Design
+              </button>
+              <button class="btn btn-outline-primary btn-sm portfolio-filter-btn rounded-pill px-3" data-filter="social">
+                Social Media
+              </button>
+            </div>
+
+            <!-- Projects Grid (.row + .card) -->
+            <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4" id="projectContainer">
+
+              <!-- Item 1: Portfolio Bootstrap 5 (Web) -->
+              <div class="col project-item" data-category="web">
+                <div class="card project-card"
+                     data-title="Portfolio Responsif Bootstrap 5"
+                     data-img="assets/images/projects/project-1.jpg"
+                     data-cat-label="Web Development"
+                     data-desc="Website portofolio interaktif dan responsif bergaya modern vCard yang dibuat dengan Bootstrap 5, grid system 12 kolom, dan offline assets."
+                     data-tools="Bootstrap 5, HTML5, CSS3, JavaScript"
+                     data-link="https://github.com/UmarEnam51/Myportfolio">
+                  <div class="project-img-wrapper">
+                    <img src="assets/images/projects/project-1.jpg" alt="Portfolio Responsif Bootstrap 5" loading="lazy">
+                    <div class="project-overlay">
+                      <a href="#" class="project-overlay-btn open-project-modal" title="Lihat Detail">
+                        <i class="bi bi-eye"></i>
+                      </a>
+                      <a href="https://github.com/UmarEnam51/Myportfolio" target="_blank" rel="noopener noreferrer" class="project-overlay-btn" title="GitHub Repository">
+                        <i class="bi bi-github"></i>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="card-body p-3">
+                    <span class="badge bg-primary-subtle text-primary border border-primary-subtle rounded-pill mb-2">Web Development</span>
+                    <h3 class="h6 card-title fw-bold mb-1">Portfolio Bootstrap 5</h3>
+                    <p class="card-text text-secondary small">Layout modern vCard responsif dengan komponen Bootstrap lengkap.</p>
+                    <div class="d-flex justify-content-between align-items-center mt-3 pt-2 border-top border-secondary opacity-75">
+                      <button class="btn btn-sm btn-outline-primary py-1 px-2 open-project-modal">Detail</button>
+                      <small class="text-secondary"><i class="bi bi-code-slash me-1"></i>Bootstrap 5</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Item 2: Instastory Promotion Vol. 1 (Social) -->
+              <div class="col project-item" data-category="social">
+                <div class="card project-card"
+                     data-title="Instagram Story Promo Campaign Vol. 1"
+                     data-img="assets/images/projects/instastory1.png"
+                     data-cat-label="Social Media & Graphic"
+                     data-desc="Desain promosi Instagram Story bertema diskon dan penawaran spesial dengan tipografi dinamis dan komposisi visual yang kontras."
+                     data-tools="Photoshop, Illustrator, Visual Design"
+                     data-link="#">
+                  <div class="project-img-wrapper">
+                    <img src="assets/images/projects/instastory1.png" alt="Instastory 1" loading="lazy">
+                    <div class="project-overlay">
+                      <a href="#" class="project-overlay-btn open-project-modal" title="Lihat Detail">
+                        <i class="bi bi-eye"></i>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="card-body p-3">
+                    <span class="badge bg-warning-subtle text-warning border border-warning-subtle rounded-pill mb-2">Social Media</span>
+                    <h3 class="h6 card-title fw-bold mb-1">Instastory Promotion #1</h3>
+                    <p class="card-text text-secondary small">Konten visual Instagram Story promosi produk dengan komposisi modern.</p>
+                    <div class="d-flex justify-content-between align-items-center mt-3 pt-2 border-top border-secondary opacity-75">
+                      <button class="btn btn-sm btn-outline-primary py-1 px-2 open-project-modal">Detail</button>
+                      <small class="text-secondary"><i class="bi bi-image me-1"></i>Graphic</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Item 3: Instastory Branding Vol. 2 (Social) -->
+              <div class="col project-item" data-category="social">
+                <div class="card project-card"
+                     data-title="Instagram Story Promo Campaign Vol. 2"
+                     data-img="assets/images/projects/instastory2.png"
+                     data-cat-label="Social Media"
+                     data-desc="Desain visual Instagram Story bertema produk dan penawaran eksklusif dengan tata letak minimalis dan elegan."
+                     data-tools="Photoshop, Graphic Design"
+                     data-link="#">
+                  <div class="project-img-wrapper">
+                    <img src="assets/images/projects/instastory2.png" alt="Instastory 2" loading="lazy">
+                    <div class="project-overlay">
+                      <a href="#" class="project-overlay-btn open-project-modal" title="Lihat Detail">
+                        <i class="bi bi-eye"></i>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="card-body p-3">
+                    <span class="badge bg-warning-subtle text-warning border border-warning-subtle rounded-pill mb-2">Social Media</span>
+                    <h3 class="h6 card-title fw-bold mb-1">Instastory Promotion #2</h3>
+                    <p class="card-text text-secondary small">Desain template Instagram story fokus call-to-action & branding.</p>
+                    <div class="d-flex justify-content-between align-items-center mt-3 pt-2 border-top border-secondary opacity-75">
+                      <button class="btn btn-sm btn-outline-primary py-1 px-2 open-project-modal">Detail</button>
+                      <small class="text-secondary"><i class="bi bi-image me-1"></i>Graphic</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Item 4: Instastory Event Series Vol. 3 (Graphic) -->
+              <div class="col project-item" data-category="graphic">
+                <div class="card project-card"
+                     data-title="Event & Giveaway Visual Kit"
+                     data-img="assets/images/projects/instastory3.png"
+                     data-cat-label="Graphic Design"
+                     data-desc="Paket grafis promosi giveaway dan penawaran berbatas waktu dengan elemen grafis berani dan warna eye-catching."
+                     data-tools="Illustrator, Digital Imaging"
+                     data-link="#">
+                  <div class="project-img-wrapper">
+                    <img src="assets/images/projects/instastory3.png" alt="Instastory 3" loading="lazy">
+                    <div class="project-overlay">
+                      <a href="#" class="project-overlay-btn open-project-modal" title="Lihat Detail">
+                        <i class="bi bi-eye"></i>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="card-body p-3">
+                    <span class="badge bg-info-subtle text-info border border-info-subtle rounded-pill mb-2">Graphic Design</span>
+                    <h3 class="h6 card-title fw-bold mb-1">Event Promo Banner</h3>
+                    <p class="card-text text-secondary small">Aset promosi event online dengan ilustrasi dan tipografi dinamis.</p>
+                    <div class="d-flex justify-content-between align-items-center mt-3 pt-2 border-top border-secondary opacity-75">
+                      <button class="btn btn-sm btn-outline-primary py-1 px-2 open-project-modal">Detail</button>
+                      <small class="text-secondary"><i class="bi bi-palette me-1"></i>Branding</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Item 5: Product Highlight Vol. 4 (Graphic) -->
+              <div class="col project-item" data-category="graphic">
+                <div class="card project-card"
+                     data-title="Brand Product Showcase Kit"
+                     data-img="assets/images/projects/instastory4.png"
+                     data-cat-label="Graphic Design"
+                     data-desc="Desain etalase produk digital untuk kampanye media sosial dengan susunan visual teratur dan fokus pada nilai produk."
+                     data-tools="Adobe Photoshop, Figma"
+                     data-link="#">
+                  <div class="project-img-wrapper">
+                    <img src="assets/images/projects/instastory4.png" alt="Instastory 4" loading="lazy">
+                    <div class="project-overlay">
+                      <a href="#" class="project-overlay-btn open-project-modal" title="Lihat Detail">
+                        <i class="bi bi-eye"></i>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="card-body p-3">
+                    <span class="badge bg-info-subtle text-info border border-info-subtle rounded-pill mb-2">Graphic Design</span>
+                    <h3 class="h6 card-title fw-bold mb-1">Product Showcase Kit</h3>
+                    <p class="card-text text-secondary small">Materi promosi komersial untuk kebutuhan katalog digital.</p>
+                    <div class="d-flex justify-content-between align-items-center mt-3 pt-2 border-top border-secondary opacity-75">
+                      <button class="btn btn-sm btn-outline-primary py-1 px-2 open-project-modal">Detail</button>
+                      <small class="text-secondary"><i class="bi bi-palette me-1"></i>Design</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Item 6: Instastory Vol. 5 (Social) -->
+              <div class="col project-item" data-category="social">
+                <div class="card project-card"
+                     data-title="Instagram Story Special Edition"
+                     data-img="assets/images/projects/instastory5.png"
+                     data-cat-label="Social Media"
+                     data-desc="Konten visual Instagram Story seri peluncuran dengan palet warna terkoordinasi dan daya tarik tinggi."
+                     data-tools="Photoshop, Social Media Design"
+                     data-link="#">
+                  <div class="project-img-wrapper">
+                    <img src="assets/images/projects/instastory5.png" alt="Instastory 5" loading="lazy">
+                    <div class="project-overlay">
+                      <a href="#" class="project-overlay-btn open-project-modal" title="Lihat Detail">
+                        <i class="bi bi-eye"></i>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="card-body p-3">
+                    <span class="badge bg-warning-subtle text-warning border border-warning-subtle rounded-pill mb-2">Social Media</span>
+                    <h3 class="h6 card-title fw-bold mb-1">Instastory Special Edition</h3>
+                    <p class="card-text text-secondary small">Desain feed dan story bertema elegan untuk engagement audiens.</p>
+                    <div class="d-flex justify-content-between align-items-center mt-3 pt-2 border-top border-secondary opacity-75">
+                      <button class="btn btn-sm btn-outline-primary py-1 px-2 open-project-modal">Detail</button>
+                      <small class="text-secondary"><i class="bi bi-image me-1"></i>Visual</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Item 7: Web Application UI (Web) -->
+              <div class="col project-item" data-category="web">
+                <div class="card project-card"
+                     data-title="Task & Finance Dashboard Platform"
+                     data-img="assets/images/projects/project-2.png"
+                     data-cat-label="Web Development"
+                     data-desc="Antarmuka web dashboard interaktif dengan Bootstrap Grid, tabel responsif, visualisasi status, dan navigasi modular."
+                     data-tools="Bootstrap 5, CSS3 Grid, JavaScript"
+                     data-link="#">
+                  <div class="project-img-wrapper">
+                    <img src="assets/images/projects/project-2.png" alt="Dashboard Platform" loading="lazy">
+                    <div class="project-overlay">
+                      <a href="#" class="project-overlay-btn open-project-modal" title="Lihat Detail">
+                        <i class="bi bi-eye"></i>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="card-body p-3">
+                    <span class="badge bg-primary-subtle text-primary border border-primary-subtle rounded-pill mb-2">Web Development</span>
+                    <h3 class="h6 card-title fw-bold mb-1">Management Web UI</h3>
+                    <p class="card-text text-secondary small">Platform antarmuka dashboard modern dengan Bootstrap 5.</p>
+                    <div class="d-flex justify-content-between align-items-center mt-3 pt-2 border-top border-secondary opacity-75">
+                      <button class="btn btn-sm btn-outline-primary py-1 px-2 open-project-modal">Detail</button>
+                      <small class="text-secondary"><i class="bi bi-laptop me-1"></i>Frontend</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+          </section>
+
+          <!-- ========================================================
+               TAB 4: SKILLS (#skills)
+               ======================================================== -->
+          <section id="skills" class="tab-pane">
+            <h2 class="section-title">Keahlian & Penguasaan</h2>
+            <p class="text-secondary mb-4">
+              Tingkat penguasaan teknologi web dan perangkat lunak desain grafis yang saya gunakan dalam pengembangan produk digital:
+            </p>
+
+            <div class="row g-4 mb-5">
+              
+              <!-- Column 1: Web Skills -->
+              <div class="col-md-6">
+                <h3 class="h5 fw-bold mb-3"><i class="bi bi-code-slash text-primary me-2"></i>Web Development</h3>
+
+                <div class="skill-card">
+                  <div class="d-flex justify-content-between mb-1">
+                    <span class="fw-semibold text-light">Bootstrap 5 (Grid, Card, Navbar)</span>
+                    <span class="text-info fw-bold">92%</span>
+                  </div>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 0%;" data-width="92" aria-valuenow="92" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+
+                <div class="skill-card">
+                  <div class="d-flex justify-content-between mb-1">
+                    <span class="fw-semibold text-light">HTML5 & Semantic Markup</span>
+                    <span class="text-info fw-bold">95%</span>
+                  </div>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 0%;" data-width="95" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+
+                <div class="skill-card">
+                  <div class="d-flex justify-content-between mb-1">
+                    <span class="fw-semibold text-light">CSS3 & Responsive Layouts</span>
+                    <span class="text-info fw-bold">88%</span>
+                  </div>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 0%;" data-width="88" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+
+                <div class="skill-card">
+                  <div class="d-flex justify-content-between mb-1">
+                    <span class="fw-semibold text-light">JavaScript (DOM & ES6)</span>
+                    <span class="text-info fw-bold">78%</span>
+                  </div>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 0%;" data-width="78" aria-valuenow="78" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+
+              </div>
+
+              <!-- Column 2: Design & Tools -->
+              <div class="col-md-6">
+                <h3 class="h5 fw-bold mb-3"><i class="bi bi-palette text-warning me-2"></i>Design & Tools</h3>
+
+                <div class="skill-card">
+                  <div class="d-flex justify-content-between mb-1">
+                    <span class="fw-semibold text-light">Graphic Design & Digital Imaging</span>
+                    <span class="text-warning fw-bold">90%</span>
+                  </div>
+                  <div class="progress">
+                    <div class="progress-bar bg-warning" role="progressbar" style="width: 0%;" data-width="90" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+
+                <div class="skill-card">
+                  <div class="d-flex justify-content-between mb-1">
+                    <span class="fw-semibold text-light">UI/UX Layout & Wireframing</span>
+                    <span class="text-warning fw-bold">85%</span>
+                  </div>
+                  <div class="progress">
+                    <div class="progress-bar bg-warning" role="progressbar" style="width: 0%;" data-width="85" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+
+                <div class="skill-card">
+                  <div class="d-flex justify-content-between mb-1">
+                    <span class="fw-semibold text-light">Git & GitHub Version Control</span>
+                    <span class="text-warning fw-bold">82%</span>
+                  </div>
+                  <div class="progress">
+                    <div class="progress-bar bg-warning" role="progressbar" style="width: 0%;" data-width="82" aria-valuenow="82" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+
+                <div class="skill-card">
+                  <div class="d-flex justify-content-between mb-1">
+                    <span class="fw-semibold text-light">Adobe Photoshop & Illustrator</span>
+                    <span class="text-warning fw-bold">88%</span>
+                  </div>
+                  <div class="progress">
+                    <div class="progress-bar bg-warning" role="progressbar" style="width: 0%;" data-width="88" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+
+            <!-- Tech Badges & Tools -->
+            <h3 class="h5 fw-bold mb-3">Tools & Ekosistem Pendukung</h3>
+            <div class="d-flex flex-wrap gap-2">
+              <span class="skill-tag"><i class="bi bi-bootstrap-fill text-primary"></i>Bootstrap 5</span>
+              <span class="skill-tag"><i class="bi bi-filetype-html text-danger"></i>HTML5</span>
+              <span class="skill-tag"><i class="bi bi-filetype-css text-info"></i>CSS3</span>
+              <span class="skill-tag"><i class="bi bi-filetype-js text-warning"></i>JavaScript</span>
+              <span class="skill-tag"><i class="bi bi-git text-danger"></i>Git</span>
+              <span class="skill-tag"><i class="bi bi-github"></i>GitHub</span>
+              <span class="skill-tag"><i class="bi bi-terminal-fill text-success"></i>PowerShell / Terminal</span>
+              <span class="skill-tag"><i class="bi bi-code-square text-info"></i>VS Code</span>
+              <span class="skill-tag"><i class="bi bi-phone-fill text-primary"></i>Responsive Mobile-First</span>
+            </div>
+
+          </section>
+
+          <!-- ========================================================
+               TAB 5: CONTACT (#contact)
+               ======================================================== -->
+          <section id="contact" class="tab-pane">
+            <h2 class="section-title">Kontak Saya</h2>
+            <p class="text-secondary mb-4">
+              Tertarik bekerja sama atau ingin mendiskusikan peluang proyek web dan desain? Silakan kirim pesan melalui formulir di bawah atau hubungi langsung:
+            </p>
+
+            <div class="row g-4 mb-4">
+              
+              <!-- Direct Contact Info Card -->
+              <div class="col-lg-5">
+                <div class="card p-4 card-inner h-100">
+                  <h3 class="h5 fw-bold mb-3">Informasi Kontak</h3>
+                  
+                  <div class="d-flex align-items-center gap-3 mb-3">
+                    <div class="contact-icon">
+                      <i class="bi bi-geo-alt-fill"></i>
+                    </div>
+                    <div>
+                      <div class="contact-label">Domisili</div>
+                      <div class="text-light fw-medium">Yogyakarta, Indonesia</div>
+                    </div>
+                  </div>
+
+                  <div class="d-flex align-items-center gap-3 mb-3">
+                    <div class="contact-icon">
+                      <i class="bi bi-envelope-fill"></i>
+                    </div>
+                    <div>
+                      <div class="contact-label">Email Utama</div>
+                      <a href="mailto:siktyone@gmail.com" class="text-info fw-medium text-decoration-none">siktyone@gmail.com</a>
+                    </div>
+                  </div>
+
+                  <div class="d-flex align-items-center gap-3 mb-3">
+                    <div class="contact-icon">
+                      <i class="bi bi-github"></i>
+                    </div>
+                    <div>
+                      <div class="contact-label">GitHub Profile</div>
+                      <a href="https://github.com/UmarEnam51" target="_blank" rel="noopener noreferrer" class="text-info fw-medium text-decoration-none">github.com/UmarEnam51</a>
+                    </div>
+                  </div>
+
+                  <div class="p-3 rounded-3 mt-auto" style="background: rgba(56, 189, 248, 0.08); border: 1px dashed rgba(56, 189, 248, 0.3);">
+                    <div class="d-flex align-items-center gap-2 text-info small fw-semibold">
+                      <i class="bi bi-clock-history"></i>
+                      <span>Jam Respons Cepat: 08.00 - 20.00 WIB</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Contact Form (.card) -->
+              <div class="col-lg-7">
+                <div class="card p-4 card-inner">
+                  <h3 class="h5 fw-bold mb-3">Kirim Pesan</h3>
+                  
+                  <form id="contactForm">
+                    <div class="row g-3">
+                      
+                      <div class="col-md-6">
+                        <label for="contactName" class="form-label">Nama Lengkap</label>
+                        <input type="text" class="form-control" id="contactName" placeholder="Contoh: Budi Santoso" required>
+                      </div>
+
+                      <div class="col-md-6">
+                        <label for="contactEmail" class="form-label">Alamat Email</label>
+                        <input type="email" class="form-control" id="contactEmail" placeholder="nama@domain.com" required>
+                      </div>
+
+                      <div class="col-12">
+                        <label for="contactSubject" class="form-label">Subjek / Topik</label>
+                        <input type="text" class="form-control" id="contactSubject" placeholder="Pertanyaan Proyek Web / Desain" required>
+                      </div>
+
+                      <div class="col-12">
+                        <label for="contactMessage" class="form-label">Pesan Anda</label>
+                        <textarea class="form-control" id="contactMessage" rows="4" placeholder="Tuliskan detail kebutuhan atau pertanyaan Anda di sini..." required></textarea>
+                      </div>
+
+                      <div class="col-12">
+                        <button type="submit" class="btn btn-primary w-100 py-3 fw-bold">
+                          <i class="bi bi-send-fill me-2"></i>Kirim Pesan Sekarang
+                        </button>
+                      </div>
+
+                    </div>
+                  </form>
+
+                </div>
+              </div>
+
+            </div>
+
+          </section>
+
+        </div>
+
+        <!-- Footer -->
+        <footer class="text-center py-4 text-secondary small">
+          <p class="mb-1">&copy; 2026 <strong>Umar (UmarEnam51)</strong>. Hak Cipta Dilindungi.</p>
+          <p class="mb-0">
+            Dibuat dengan <i class="bi bi-heart-fill text-danger mx-1"></i> menggunakan 
+            <span class="text-primary fw-semibold">Bootstrap 5</span> (Offline) &bull; Praktikum Pemrograman Fullstack (PFS)
+          </p>
+        </footer>
+
+      </main>
+
+    </div>
+  </div>
+
+  <!-- ==========================================
+       MODAL: Project Detail Preview (.modal)
+       ========================================== -->
+  <div class="modal fade" id="projectModal" tabindex="-1" aria-labelledby="modalProjectTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div>
+            <span class="badge bg-primary-subtle text-primary border border-primary-subtle rounded-pill mb-1" id="modalProjectCategory">Kategori</span>
+            <h5 class="modal-title fw-bold text-light" id="modalProjectTitle">Judul Proyek</h5>
+          </div>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body p-4">
+          <div class="rounded-3 overflow-hidden mb-3 border border-secondary border-opacity-25" style="max-height: 400px; background: #000;">
+            <img src="" alt="Project Image" class="img-fluid w-100" id="modalProjectImg" style="object-fit: contain; max-height: 400px;">
+          </div>
+          <h6 class="fw-bold text-light mb-2">Tentang Proyek</h6>
+          <p class="text-secondary mb-3" id="modalProjectDesc">Deskripsi proyek.</p>
+          <div class="mb-3">
+            <span class="fw-bold text-light me-2">Teknologi Digunakan:</span>
+            <span class="text-info" id="modalProjectTools">Bootstrap 5</span>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-outline-light btn-sm" data-bs-dismiss="modal">Tutup</button>
+          <a href="#" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm" id="modalProjectLink">
+            <i class="bi bi-box-arrow-up-right me-1"></i>Buka Link / Repository
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================
+       TOAST NOTIFICATION (.toast)
+       ========================================== -->
+  <div class="toast-container position-fixed bottom-0 end-0 p-3" style="z-index: 1090;">
+    <div id="contactToast" class="toast align-items-center text-bg-primary border-0" role="alert" aria-live="assertive" aria-atomic="true">
+      <div class="d-flex">
+        <div class="toast-body d-flex align-items-center gap-2">
+          <i class="bi bi-check-circle-fill fs-5"></i>
+          <span id="toastMessage">Pesan Anda berhasil dikirim!</span>
+        </div>
+        <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Offline Local Bootstrap 5 Bundle JS -->
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Custom Logic JS -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
