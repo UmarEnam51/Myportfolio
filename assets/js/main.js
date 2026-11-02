@@ -1,24 +1,15 @@
-/**
- * PORTFOLIO JAVASCRIPT LOGIC
- * Author: Umar (UmarEnam51)
- * Framework: Bootstrap 5
- */
-
 document.addEventListener('DOMContentLoaded', function () {
   'use strict';
 
-  // --- 1. Tab Navigation System ---
   const navLinks = document.querySelectorAll('.navbar-custom .nav-link');
   const tabPanes = document.querySelectorAll('.tab-pane');
   const navbarCollapse = document.getElementById('navbarContent');
 
   function switchTab(targetId) {
-    // Clean targetId if passed with hash
     const cleanId = targetId.replace('#', '');
     const targetPane = document.getElementById(cleanId);
     if (!targetPane) return;
 
-    // Update active nav-link
     navLinks.forEach(link => {
       if (link.getAttribute('data-target') === cleanId || link.getAttribute('href') === `#${cleanId}`) {
         link.classList.add('active');
@@ -27,7 +18,6 @@ document.addEventListener('DOMContentLoaded', function () {
       }
     });
 
-    // Update active tab pane
     tabPanes.forEach(pane => {
       if (pane.id === cleanId) {
         pane.classList.add('active');
@@ -36,12 +26,10 @@ document.addEventListener('DOMContentLoaded', function () {
       }
     });
 
-    // Trigger skill bars animation if switching to skills tab
     if (cleanId === 'skills') {
       animateSkillBars();
     }
 
-    // Scroll smoothly to top of main content on mobile
     if (window.innerWidth < 992) {
       const mainCard = document.querySelector('.main-content-card');
       if (mainCard) {
@@ -49,7 +37,6 @@ document.addEventListener('DOMContentLoaded', function () {
       }
     }
 
-    // Close mobile navbar dropdown if open
     if (navbarCollapse && navbarCollapse.classList.contains('show')) {
       const bsCollapse = bootstrap.Collapse.getInstance(navbarCollapse);
       if (bsCollapse) {
@@ -58,7 +45,6 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   }
 
-  // Bind click on navbar links
   navLinks.forEach(link => {
     link.addEventListener('click', function (e) {
       e.preventDefault();
@@ -68,7 +54,6 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 
-  // Handle direct hash navigation on page load
   if (window.location.hash) {
     const hash = window.location.hash.substring(1);
     if (document.getElementById(hash)) {
@@ -76,7 +61,6 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   }
 
-  // --- 2. Mobile Contact Details Toggle (vCard style) ---
   const toggleContactsBtn = document.getElementById('toggleContactsBtn');
   const contactsCollapse = document.getElementById('contactsCollapse');
   const toggleContactsText = document.getElementById('toggleContactsText');
@@ -100,7 +84,6 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
-  // --- 3. Portfolio Project Filtering ---
   const filterBtns = document.querySelectorAll('.portfolio-filter-btn');
   const projectItems = document.querySelectorAll('.project-item');
 
@@ -123,7 +106,6 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 
-  // --- 4. Project Modal Details Preview ---
   const projectModal = document.getElementById('projectModal');
   const modalProjectTitle = document.getElementById('modalProjectTitle');
   const modalProjectImg = document.getElementById('modalProjectImg');
@@ -157,7 +139,6 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 
-  // --- 5. Skill Bars Animation ---
   let animated = false;
   function animateSkillBars() {
     const progressBars = document.querySelectorAll('.progress-bar');
@@ -167,7 +148,6 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
-  // --- 6. Contact Form Submission & Toast ---
   const contactForm = document.getElementById('contactForm');
   const contactToastEl = document.getElementById('contactToast');
   const toastMessage = document.getElementById('toastMessage');
@@ -186,7 +166,6 @@ document.addEventListener('DOMContentLoaded', function () {
         return;
       }
 
-      // Show button loading state
       const originalText = submitBtn.innerHTML;
       submitBtn.disabled = true;
       submitBtn.innerHTML = '<span class="spinner-border spinner-border-sm me-2" role="status"></span>Mengirim...';
@@ -209,7 +188,6 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
-  // Run skill bars animation on load if skills is default active
   const activePane = document.querySelector('.tab-pane.active');
   if (activePane && activePane.id === 'skills') {
     animateSkillBars();

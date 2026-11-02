@@ -8,43 +8,32 @@
   <meta name="author" content="Umar (UmarEnam51)">
   <link rel="icon" type="image/png" href="assets/images/avatar.png">
 
-  <!-- Offline Local Bootstrap 5 CSS -->
   <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-  
-  <!-- Offline Local Bootstrap Icons CSS -->
+
   <link rel="stylesheet" href="assets/css/bootstrap-icons.min.css">
 
-  <!-- Custom Stylesheet -->
   <link rel="stylesheet" href="assets/css/style.css">
 
-  <!-- Google Fonts: Poppins -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
 
-  <!-- Main Container -->
   <div class="container container-xl py-4 py-lg-5">
     <div class="row g-4">
 
-      <!-- ==========================================
-           LEFT SIDEBAR: Profile vCard (.card)
-           ========================================== -->
       <aside class="col-lg-4 col-xl-3">
         <div class="card sidebar-card p-4 text-center">
-          
-          <!-- Avatar & Status -->
+
           <div class="profile-avatar-wrapper">
             <img src="assets/images/profile.jpg" alt="Foto Profil Umar" class="profile-avatar img-fluid">
             <span class="status-badge" title="Tersedia untuk proyek"></span>
           </div>
 
-          <!-- Name & Role -->
           <h1 class="h4 fw-bold mb-1">Umar</h1>
           <p class="role-badge mb-3">Web Developer & Graphic Designer</p>
 
-          <!-- Mobile Toggle Button for Contacts -->
           <div class="d-lg-none mb-3">
             <button class="btn btn-outline-primary btn-sm w-100 rounded-pill py-2" type="button" data-bs-toggle="collapse" data-bs-target="#contactsCollapse" aria-expanded="false" aria-controls="contactsCollapse" id="toggleContactsBtn">
               <span id="toggleContactsText">Lihat Kontak Lengkap</span>
@@ -52,12 +41,11 @@
             </button>
           </div>
 
-          <!-- Contact Information List (Collapsible on Mobile, always open on Desktop) -->
           <div class="collapse d-lg-block text-start" id="contactsCollapse">
             <hr class="border-secondary opacity-25 my-3">
 
             <div class="contact-list">
-              <!-- Email -->
+              
               <div class="contact-item">
                 <div class="contact-icon">
                   <i class="bi bi-envelope-at-fill"></i>
@@ -68,7 +56,6 @@
                 </div>
               </div>
 
-              <!-- GitHub -->
               <div class="contact-item">
                 <div class="contact-icon">
                   <i class="bi bi-github"></i>
@@ -79,7 +66,6 @@
                 </div>
               </div>
 
-              <!-- Phone / WhatsApp -->
               <div class="contact-item">
                 <div class="contact-icon">
                   <i class="bi bi-whatsapp"></i>
@@ -90,7 +76,6 @@
                 </div>
               </div>
 
-              <!-- Location -->
               <div class="contact-item">
                 <div class="contact-icon">
                   <i class="bi bi-geo-alt-fill"></i>
@@ -104,7 +89,6 @@
 
             <hr class="border-secondary opacity-25 my-3">
 
-            <!-- Social Media Buttons (.btn) -->
             <div class="d-flex justify-content-center gap-2 mb-3">
               <a href="https://github.com/UmarEnam51" target="_blank" rel="noopener noreferrer" class="social-btn" title="GitHub">
                 <i class="bi bi-github"></i>
@@ -120,7 +104,6 @@
               </a>
             </div>
 
-            <!-- Download CV Button (.btn) -->
             <a href="#contact" class="btn btn-primary w-100 rounded-pill py-2 shadow-sm" onclick="document.querySelector('[data-target=\'contact\']').click();">
               <i class="bi bi-send-fill me-2"></i>Hubungi Saya
             </a>
@@ -129,12 +112,8 @@
         </div>
       </aside>
 
-      <!-- ==========================================
-           RIGHT MAIN CONTENT: Navbar & Sections
-           ========================================== -->
       <main class="col-lg-8 col-xl-9">
 
-        <!-- Top Navigation Bar (.navbar) -->
         <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
           <div class="container-fluid p-0">
             <a class="navbar-brand fw-bold" href="#">
@@ -175,12 +154,8 @@
           </div>
         </nav>
 
-        <!-- Main Card Container (.card) -->
         <div class="card main-content-card p-4 p-md-5">
 
-          <!-- ========================================================
-               TAB 1: ABOUT ME (#about)
-               ======================================================== -->
           <section id="about" class="tab-pane active">
             <h2 class="section-title">Tentang Saya</h2>
             
@@ -191,11 +166,9 @@
               Dengan pemahaman mendalam tentang ekosistem frontend seperti <strong>Bootstrap 5</strong>, HTML5, CSS3, dan JavaScript, saya mampu mengubah konsep dan desain antarmuka menjadi halaman web yang cepat, responsif di berbagai perangkat, serta mudah digunakan. Selain itu, keahlian desain grafis saya membantu menghadirkan visualisasi brand dan konten promosi yang selaras dan profesional.
             </p>
 
-            <!-- What I'm Doing / Services (.row + .card) -->
             <h3 class="h4 fw-bold mb-4">Layanan & Keahlian Utama</h3>
             <div class="row g-4 mb-5">
-              
-              <!-- Service 1: Web Development -->
+
               <div class="col-md-6">
                 <div class="card service-card">
                   <div class="service-icon-box">
@@ -208,7 +181,6 @@
                 </div>
               </div>
 
-              <!-- Service 2: Graphic Design -->
               <div class="col-md-6">
                 <div class="card service-card">
                   <div class="service-icon-box">
@@ -221,7 +193,6 @@
                 </div>
               </div>
 
-              <!-- Service 3: UI/UX Design -->
               <div class="col-md-6">
                 <div class="card service-card">
                   <div class="service-icon-box">
@@ -234,7 +205,6 @@
                 </div>
               </div>
 
-              <!-- Service 4: Social Media Branding -->
               <div class="col-md-6">
                 <div class="card service-card">
                   <div class="service-icon-box">
@@ -249,7 +219,6 @@
 
             </div>
 
-            <!-- Highlights / Key Values (.row + .card) -->
             <h3 class="h4 fw-bold mb-4">Nilai & Karakteristik Kerja</h3>
             <div class="row g-3">
               <div class="col-sm-4 text-center">
@@ -277,15 +246,11 @@
 
           </section>
 
-          <!-- ========================================================
-               TAB 2: RESUME (#resume)
-               ======================================================== -->
           <section id="resume" class="tab-pane">
             <h2 class="section-title">Resume & Pengalaman</h2>
 
             <div class="row g-4 mb-5">
-              
-              <!-- Column 1: Pendidikan -->
+
               <div class="col-md-6">
                 <div class="d-flex align-items-center gap-2 mb-4">
                   <div class="contact-icon" style="width: 38px; height: 38px;">
@@ -319,7 +284,6 @@
                 </div>
               </div>
 
-              <!-- Column 2: Pengalaman -->
               <div class="col-md-6">
                 <div class="d-flex align-items-center gap-2 mb-4">
                   <div class="contact-icon" style="width: 38px; height: 38px;">
@@ -355,7 +319,6 @@
 
             </div>
 
-            <!-- Certifications & Achievements -->
             <h3 class="h5 fw-bold mb-3">Sertifikasi & Pelatihan</h3>
             <div class="row g-3">
               <div class="col-sm-6">
@@ -380,13 +343,9 @@
 
           </section>
 
-          <!-- ========================================================
-               TAB 3: PORTFOLIO (#portfolio)
-               ======================================================== -->
           <section id="portfolio" class="tab-pane">
             <h2 class="section-title">Portfolio Proyek</h2>
 
-            <!-- Filter Buttons (.btn) -->
             <div class="d-flex flex-wrap gap-2 mb-4">
               <button class="btn btn-outline-primary btn-sm portfolio-filter-btn active rounded-pill px-3" data-filter="all">
                 Semua Proyek
@@ -402,10 +361,8 @@
               </button>
             </div>
 
-            <!-- Projects Grid (.row + .card) -->
             <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4" id="projectContainer">
 
-              <!-- Item 1: Portfolio Bootstrap 5 (Web) -->
               <div class="col project-item" data-category="web">
                 <div class="card project-card"
                      data-title="Portfolio Responsif Bootstrap 5"
@@ -437,7 +394,6 @@
                 </div>
               </div>
 
-              <!-- Item 2: Instastory Promotion Vol. 1 (Social) -->
               <div class="col project-item" data-category="social">
                 <div class="card project-card"
                      data-title="Instagram Story Promo Campaign Vol. 1"
@@ -466,7 +422,6 @@
                 </div>
               </div>
 
-              <!-- Item 3: Instastory Branding Vol. 2 (Social) -->
               <div class="col project-item" data-category="social">
                 <div class="card project-card"
                      data-title="Instagram Story Promo Campaign Vol. 2"
@@ -495,7 +450,6 @@
                 </div>
               </div>
 
-              <!-- Item 4: Instastory Event Series Vol. 3 (Graphic) -->
               <div class="col project-item" data-category="graphic">
                 <div class="card project-card"
                      data-title="Event & Giveaway Visual Kit"
@@ -524,7 +478,6 @@
                 </div>
               </div>
 
-              <!-- Item 5: Product Highlight Vol. 4 (Graphic) -->
               <div class="col project-item" data-category="graphic">
                 <div class="card project-card"
                      data-title="Brand Product Showcase Kit"
@@ -553,7 +506,6 @@
                 </div>
               </div>
 
-              <!-- Item 6: Instastory Vol. 5 (Social) -->
               <div class="col project-item" data-category="social">
                 <div class="card project-card"
                      data-title="Instagram Story Special Edition"
@@ -582,7 +534,6 @@
                 </div>
               </div>
 
-              <!-- Item 7: Web Application UI (Web) -->
               <div class="col project-item" data-category="web">
                 <div class="card project-card"
                      data-title="Task & Finance Dashboard Platform"
@@ -615,9 +566,6 @@
 
           </section>
 
-          <!-- ========================================================
-               TAB 4: SKILLS (#skills)
-               ======================================================== -->
           <section id="skills" class="tab-pane">
             <h2 class="section-title">Keahlian & Penguasaan</h2>
             <p class="text-secondary mb-4">
@@ -625,8 +573,7 @@
             </p>
 
             <div class="row g-4 mb-5">
-              
-              <!-- Column 1: Web Skills -->
+
               <div class="col-md-6">
                 <h3 class="h5 fw-bold mb-3"><i class="bi bi-code-slash text-primary me-2"></i>Web Development</h3>
 
@@ -672,7 +619,6 @@
 
               </div>
 
-              <!-- Column 2: Design & Tools -->
               <div class="col-md-6">
                 <h3 class="h5 fw-bold mb-3"><i class="bi bi-palette text-warning me-2"></i>Design & Tools</h3>
 
@@ -720,7 +666,6 @@
 
             </div>
 
-            <!-- Tech Badges & Tools -->
             <h3 class="h5 fw-bold mb-3">Tools & Ekosistem Pendukung</h3>
             <div class="d-flex flex-wrap gap-2">
               <span class="skill-tag"><i class="bi bi-bootstrap-fill text-primary"></i>Bootstrap 5</span>
@@ -736,9 +681,6 @@
 
           </section>
 
-          <!-- ========================================================
-               TAB 5: CONTACT (#contact)
-               ======================================================== -->
           <section id="contact" class="tab-pane">
             <h2 class="section-title">Kontak Saya</h2>
             <p class="text-secondary mb-4">
@@ -746,8 +688,7 @@
             </p>
 
             <div class="row g-4 mb-4">
-              
-              <!-- Direct Contact Info Card -->
+
               <div class="col-lg-5">
                 <div class="card p-4 card-inner h-100">
                   <h3 class="h5 fw-bold mb-3">Informasi Kontak</h3>
@@ -791,7 +732,6 @@
                 </div>
               </div>
 
-              <!-- Contact Form (.card) -->
               <div class="col-lg-7">
                 <div class="card p-4 card-inner">
                   <h3 class="h5 fw-bold mb-3">Kirim Pesan</h3>
@@ -837,7 +777,6 @@
 
         </div>
 
-        <!-- Footer -->
         <footer class="text-center py-4 text-secondary small">
           <p class="mb-1">&copy; 2026 <strong>Umar (UmarEnam51)</strong>. Hak Cipta Dilindungi.</p>
           <p class="mb-0">
@@ -851,9 +790,6 @@
     </div>
   </div>
 
-  <!-- ==========================================
-       MODAL: Project Detail Preview (.modal)
-       ========================================== -->
   <div class="modal fade" id="projectModal" tabindex="-1" aria-labelledby="modalProjectTitle" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-lg">
       <div class="modal-content">
@@ -885,9 +821,6 @@
     </div>
   </div>
 
-  <!-- ==========================================
-       TOAST NOTIFICATION (.toast)
-       ========================================== -->
   <div class="toast-container position-fixed bottom-0 end-0 p-3" style="z-index: 1090;">
     <div id="contactToast" class="toast align-items-center text-bg-primary border-0" role="alert" aria-live="assertive" aria-atomic="true">
       <div class="d-flex">
@@ -900,10 +833,8 @@
     </div>
   </div>
 
-  <!-- Offline Local Bootstrap 5 Bundle JS -->
   <script src="assets/js/bootstrap.bundle.min.js"></script>
 
-  <!-- Custom Logic JS -->
   <script src="assets/js/main.js"></script>
 </body>
 </html>

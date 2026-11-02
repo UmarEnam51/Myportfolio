@@ -1,9 +1,3 @@
-/* ==========================================================================
-   PORTFOLIO MODERN VCARD THEME - BOOTSTRAP 5
-   Author: Umar (UmarEnam51)
-   Role: Junior Web Developer & Graphic Designer
-   ========================================================================== */
-
 :root {
   --bg-body: #101114;
   --bg-card: #1b1c22;
@@ -23,7 +17,6 @@
   --transition-smooth: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-/* Base Styling */
 * {
   box-sizing: border-box;
 }
@@ -38,7 +31,6 @@ body {
   position: relative;
 }
 
-/* Background Ambient Glows */
 body::before,
 body::after {
   content: "";
@@ -66,7 +58,6 @@ body::after {
   background: radial-gradient(circle, rgba(99, 102, 241, 0.3), transparent 70%);
 }
 
-/* Custom Scrollbar */
 ::-webkit-scrollbar {
   width: 8px;
 }
@@ -81,7 +72,6 @@ body::after {
   background: var(--accent-primary);
 }
 
-/* Typography & Headings */
 h1, h2, h3, h4, h5, h6 {
   color: var(--text-main);
   font-weight: 700;
@@ -114,7 +104,6 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-text-fill-color: transparent;
 }
 
-/* Cards System */
 .card {
   background-color: var(--bg-card);
   border: 1px solid var(--border-color);
@@ -133,7 +122,6 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 1rem;
 }
 
-/* Profile Sidebar Card */
 .sidebar-card {
   position: sticky;
   top: 2rem;
@@ -227,7 +215,6 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--accent-primary);
 }
 
-/* Social Buttons */
 .social-btn {
   width: 40px;
   height: 40px;
@@ -250,7 +237,6 @@ h1, h2, h3, h4, h5, h6 {
   box-shadow: 0 6px 15px rgba(56, 189, 248, 0.35);
 }
 
-/* Navbar Component */
 .navbar-custom {
   background: var(--bg-glass);
   backdrop-filter: blur(14px);
@@ -288,7 +274,6 @@ h1, h2, h3, h4, h5, h6 {
   box-shadow: 0 4px 15px rgba(56, 189, 248, 0.3);
 }
 
-/* Buttons (.btn) */
 .btn {
   font-weight: 600;
   padding: 0.6rem 1.35rem;
@@ -334,7 +319,6 @@ h1, h2, h3, h4, h5, h6 {
   color: #fff;
 }
 
-/* Service Cards */
 .service-card {
   height: 100%;
   position: relative;
@@ -384,7 +368,6 @@ h1, h2, h3, h4, h5, h6 {
   object-fit: contain;
 }
 
-/* Timeline Components (Resume) */
 .timeline {
   position: relative;
   padding-left: 2rem;
@@ -432,7 +415,6 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 0.5rem;
 }
 
-/* Portfolio Projects */
 .project-card {
   border-radius: 1.25rem;
   overflow: hidden;
@@ -509,7 +491,6 @@ h1, h2, h3, h4, h5, h6 {
   box-shadow: var(--glow-shadow);
 }
 
-/* Skills Progress Bars */
 .skill-card {
   background: var(--bg-card-secondary);
   border: 1px solid var(--border-color);
@@ -551,7 +532,6 @@ h1, h2, h3, h4, h5, h6 {
   transform: translateY(-2px);
 }
 
-/* Contact Form */
 .form-control {
   background-color: var(--bg-card-secondary);
   border: 1px solid var(--border-color);
@@ -579,7 +559,6 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 0.4rem;
 }
 
-/* Modal Styling */
 .modal-content {
   background-color: var(--bg-card);
   border: 1px solid var(--border-color);
@@ -600,7 +579,6 @@ h1, h2, h3, h4, h5, h6 {
   filter: invert(1) grayscale(100%) brightness(200%);
 }
 
-/* Tab Content Visibility Animation */
 .tab-pane {
   display: none;
   animation: fadeIn 0.4s ease-in-out;
@@ -621,7 +599,6 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-/* Responsive Media Queries */
 @media (max-width: 991.98px) {
   .sidebar-card {
     position: static;
